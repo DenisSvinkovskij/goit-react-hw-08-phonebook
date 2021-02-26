@@ -24,7 +24,7 @@ class App extends Component {
     return (
       <div>
         <AppBar />
-        <Suspense fallback={Loading}>
+        <Suspense fallback={<Loading />}>
           <Switch>
             <PublicRoute exact path="/" component={HomePage} />
             <PublicRoute
